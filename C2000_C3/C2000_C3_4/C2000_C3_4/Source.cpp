@@ -51,7 +51,7 @@ int main()
 		s3 = "\nand who loved ",
 		s4 = ".  At the age of ",
 		s5 = ", ",
-		s6 = " gradeuated \nfrom high school and went to work in a ",
+		s6 = " graduated \nfrom high school and went to work in a ",
 		s7 = " factory.\n",
 		s8 = " got married and had ",
 		s9 = " children and a pet ",
@@ -66,23 +66,38 @@ int main()
 	cout << "Enter the following information and I\'ll "
 		<< "tell you a story.\n\n";
 	cout << "Your name: ";
-	getline(cin, name);
-
+	//getline(cin, name);
+	name = "kim";
+	cout << name;
 	cout << "The name of a city: ";
-	getline(cin, city);
+	//getline(cin, city);
+	city = "gainesville";
+	cout << city;
 	cout << "A physical activity (e.g. jogging, playing baseball):  ";
-	getline(cin, activity);
+	//getline(cin, activity);
+	activity = "walking ";
+	cout << activity;
+	
 	cout << "An animal: ";
-	getline(cin, animal);
+	//getline(cin, animal);
+	animal = "dog";
+	cout << animal;
 	cout << "A food or product you can buy:  ";
-	getline(cin, product);
+	//getline(cin, product);
+	product = "taco";
+	cout << product;
 	cout << "An adjective noun(e.g. blue car):  ";
-	getline(cin, petName);
+	//getline(cin, petName);
+	petName = "Nate";
+	
 	cout << "A number between 10 and 50: ";
-	cin >> age;
+	//cin >> age;
+	age = 20;
+	cout << age;
 	cout << "A number between 0 and 15: ";
-	cin >> kids;
-
+	//cin >> kids;
+	kids = 10;
+	cout << kids;
 	cout << endl << s1 << name
 		<< s2 << city << s3 << activity;
 	cout << s4 << age
@@ -95,11 +110,21 @@ int main()
 		<< s11 << petName
 		<< s12 << activity
 		<< s13 << endl;
+	
+	cout << endl;
+	cout << endl;
+	// RQ 11
+	cout << "\n********************* " << endl;
+	cout << "   RQ 11         " << endl;
+
+	int a, b = 2;
+	double c = 4.3;
+	a = b*c;
+	cout << " a  =b*c =   " << a;
 
 
 	cout << endl;
 	cout << endl;
-
 	return 0;
 
 }
